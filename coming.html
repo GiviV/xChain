@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.0.0-beta.55/dist/web3.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+    <meta name="description" content="Welcome to Xchain AI">
+    <meta name="keywords" content="Xchain, AI, NFT, Etherium">
+
+    <meta property="og:image" content="img/meta-img.png">
+
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bg.css">
+    <title>Xchain</title>
+
+    <link rel="icon" href="img/icon.ico" id="title-icon">
+
+<body class="coming-body">
+    <div id="overlay">
+
+
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+
+    <header class="header coming-header">
+
+        <div class="header-top">
+            <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <a href="index.html"  class="nav-link "> HOME</a>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <!----------------------header end --------------------->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <section class="features-section coming-features" id="features">
+
+        <div class="features-content">
+            <h2>Platform Features</h2>
+
+            <div class="px-app px-dropdown" data-aos="fade-up" data-aos-duration="1200">
+                <input class="px-dropdown-value" type="hidden">
+                <div class="px-dropdown-input">
+                    <input type="text" readonly value="AI-powered content generation">
+                    <img src="img/arrow-down.svg" alt="Down">
+                </div>
+                <div class="px-dropdown-panel">
+                    <ul>
+                        <li onClick="ul(0)">AI-powered content generation</li>
+                        <li onClick="ul(1)">NFT creation and distribution</li>
+                        <li onClick="ul(2)">Vesting/lockup contracts</li>
+                        <li onClick="ul(3)">Social media writing </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="underline"></div>
+                <div class="underline"></div>
+                <div class="underline"></div>
+                <a onClick="ul(0)" class="scheme-link">AI-powered content generation</a>
+                <a onClick="ul(1)" class="scheme-link">NFT creation and distribution</a>
+                <a onClick="ul(2)" class="scheme-link">Vesting/lockup contracts</a>
+                <a onClick="ul(3)" class="scheme-link">Social media writing </a>
+            </div>
+
+            <div class="coming-animation">
+       
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>
+                        
+                    <p>Coming Soon</p>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="feedback-container coming-feedback" data-aos="fade-up" data-aos-duration="1200">
+                <div class="feedback-txt">
+                    <h4> Write a <br> feedback</h4>
+                    <p class="tt-grey-18">
+                        You can write a feedback or suggestions and let us know how you feel about private/public sales
+                        or
+                        in general about the project. Please log in to write a feedback.
+                    </p>
+                </div>
+
+                <form class="send-feedback" action="https://formsubmit.co/vakhtangishviligi@gmail.com" method="post">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Any suggestions?"></textarea>
+                    <input type="submit" value="Send Feedback" id="send-feedback">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------- pop up ---------------------------------->
+    <div id="popup-container">
+        <div class="popup">
+            <div class="popup-header">
+                <p>Connect Wallet</p>
+                <button class="popup-close-btn" onclick="closePop()">
+                    Close
+                    <img src="img/close.svg" alt="Close">
+                </button>
+            </div>
+
+            <div class="popup-middle">
+                <img src="img/popup-img.png" alt="AI">
+                <h6>Welcome to Xchain AI</h6>
+                <p>Please select a desired chain below</p>
+            </div>
+
+            <div class="popup-btns">
+                <a href="#" id="metamask-btn">
+                    <button id="connect-btn">
+                        <img src="img/eth.svg" alt="Etherium">
+                        Connect Etherium Wallet
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--------------------------- footer ---------------------------------->
+    <footer class="coming-footer">
+        <div class="footer-content">
+            <div class="footer-top">
+                <a href="index.html">
+                    <img src="img/footer-logo.svg" alt="Logo">
+                </a>
+                <div class="footer-social">
+                    <a href="#"> <img src="img/discord.svg" alt="Discord"> </a>
+                    <a href="#"> <img src="img/twitter.svg" alt="Twitter"> </a>
+                    <a href="#"> <img src="img/opensea.svg" alt="Opensea"> </a>
+                    <a href="#"> <img src="img/stat.svg" alt="Discord"> </a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-footer">
+                <nav>
+                    <a href="#header">Home</a>
+                    <a href="#section-team">Our Team</a>
+                    <a href="#tokenomics">Tokenomics</a>
+                    <a href="#features">Features</a>
+                    <a href="#about-us">About us </a>
+                </nav>
+                <p>Copyright &#169; A1, 2023</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script>
+        function ul(index) {
+
+            console.log('click!' + index)
+
+            var underlines = document.querySelectorAll(".underline");
+            var photos = document.querySelectorAll('.menu-schemes');
+            var links = document.querySelectorAll('.scheme-link');
+
+            for (var i = 0; i < underlines.length; i++) {
+                underlines[i].style.transform = 'translate3d(' + index * 100 + '%, 0, 0)';
+
+            }
+
+            for (let j = 0; j < photos.length; j++) {
+                photos[j].style.display = 'none';
+                links[j].style.color = '#5B627A';
+            }
+            links[index].style.color = '#FFFFFF';
+            photos[index].style.display = 'block';
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <script>
+        const initpXDropdown = () => {
+            const dropdownElements = document.querySelectorAll(".px-dropdown");
+            window.addEventListener("click", () => {
+                dropdownElements.forEach((item) => {
+                    item.classList.remove("active");
+                });
+            });
+            dropdownElements.forEach((item) => {
+                const dropdownValue = item.querySelector(".px-dropdown-value");
+                const dropdownInput = item.querySelector(".px-dropdown-input");
+                const dropdownPanelOptions = item.querySelectorAll(
+                    ".px-dropdown-panel ul li"
+                );
+                dropdownInput.addEventListener("click", (event) => {
+                    event.stopPropagation();
+                    item.classList.toggle("active");
+                });
+                dropdownPanelOptions.forEach((dropdownPanelOptionItem) => {
+                    dropdownPanelOptionItem.addEventListener("click", () => {
+                        dropdownInput.querySelector("input").value =
+                            dropdownPanelOptionItem.innerHTML;
+                        dropdownValue.value = dropdownPanelOptionItem.getAttribute(
+                            "data-value"
+                        );
+                    });
+                });
+            });
+        };
+        initpXDropdown();
+
+    </script>
+
+    <script>
+        let popup = document.getElementById('popup-container');
+
+        function closePop() {
+            popup.style.opacity = '0';
+            popup.style.zIndex = '-1';
+            document.body.classList.remove("stop-scrolling");
+        }
+        function openPop() {
+            popup.style.opacity = '1';
+            popup.style.zIndex = '9999';
+            document.body.classList.add("stop-scrolling");
+
+        }
+    </script>
+
+
+    <script>
+
+        document.getElementById('connect-btn').addEventListener('click', event => {
+            let account;
+            let popup = document.getElementById('popup-container');
+            let button = event.target;
+            let feedbackBtn = document.getElementById('send-feedback');
+            let connBtn = document.getElementById('header-btn');
+            ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
+                popup.style.opacity = '0';
+                popup.style.zIndex = '-1';
+                document.body.classList.remove("stop-scrolling");
+
+                account = accounts[0];
+                button.textContent = account;
+                document.cookie = account;
+                feedbackBtn.disabled = false;
+                connBtn.textContent = 'Go To Platform';
+
+                ethereum.request({ method: 'eth_getBalance', params: [account, 'latest'] }).then(result => {
+
+                    let wei = parseInt(result, 16);
+                    let balance = wei / (10 ** 18);
+
+                });
+            });
+        });
+
+    </script>
+    <!-- <script>
+        let feedbackBtn = document.getElementById('send-feedback');
+        let connBtn = document.getElementById('header-btn');
+        let ca = document.cookie.split(';');
+        if (ca[2].indexOf('0') > -1) {
+            feedbackBtn.disabled = false;
+            connBtn.textContent = 'Go To Platform';
+        }
+    </script> -->
+
+
+
+
+    <script>
+        let overlay = document.getElementById("overlay");
+
+        setTimeout(function () {
+            overlay.style.opacity = "0";
+            overlay.style.zIndex = "-1";
+
+        }, 2000);
+
+    </script>
+
+
+</body>
+
+</html>

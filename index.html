@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.0.0-beta.55/dist/web3.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+    <meta name="description" content="Welcome to Xchain AI">
+    <meta name="keywords" content="Xchain, AI, NFT, Etherium">
+
+    <meta property="og:image" content="img/meta-img.png">
+</script>
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="bg.css">
+    <title>Xchain</title>
+
+    <link rel="icon" href="img/ico.ico" id="title-icon">
+
+<body>
+
+
+    <div id="overlay">
+
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="header-top">
+            <a href="index.html"><img src="img/logo.svg" alt="logo" class="logo"></a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#header" class="nav-link">Home</a></li>
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#tokenomics" class="nav-link">Tokenomics</a></li>
+                    <li><a href="#section-team" class="nav-link">Our Team</a></li>
+                    <li><a href="#" id="header-btn" class="nav-link connect-btn" onclick="openPop()">Connect
+                            Wallet</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="header-hero  connected-hidden">
+            <div class="hero-container">
+                <div class="left-side">
+                    <p class="next-generation">Revolutionizing AI Experience with Xchain</p>
+                    <h1 class="main-h1">Welcome to <br> Xchain AI</h1>
+                    <p class="platform">
+                        Join the cutting-edge of AI and blockchain with Xchain AI. Our platform brings together AI engineers, blockchain developers, and industry experts to create solutions for streamlining the process of writing smart contracts and designing secure, efficient systems in the blockchain ecosystem
+                    </p>
+                    <div class="boxes">
+                        <!-- <div class="box">
+                            <div class="info">
+                                <span class="value">+4500</span>
+                                <p class="unique">Unique NFTs</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="info">
+                                <span class="value">+200</span>
+                                <p class="unique">Contributors</p>
+                            </div>
+                        </div> -->
+
+                        <a class="box-btn" href="#">
+                            <p>Litepaper</p>
+                            <img src="img/arrow-right.svg" alt="Right">
+                        </a>
+
+                        
+                        <a class="box-btn" href="#">
+                            <p>Whitepaper</p>
+                            <img src="img/arrow-right.svg" alt="Right">
+                        </a>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <img src="/img/light1.svg" alt="light" class="light">
+                    <img src="img/main-img.png" alt="hero-img" class="main-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!----------------------header end --------------------->
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <section class="features-section" id="features">
+
+        <div class="features-content">
+            <h2>Platform Features</h2>
+
+            <div class="px-app px-dropdown" data-aos="fade-up" data-aos-duration="1200">
+                <input class="px-dropdown-value" type="hidden">
+                <div class="px-dropdown-input">
+                    <input type="text" readonly value="AI-powered content generation">
+                    <img src="img/arrow-down.svg" alt="Down">
+                </div>
+                <div class="px-dropdown-panel">
+                    <ul>
+                        <li onClick="ul(0)">AI-powered content generation</li>
+                        <li onClick="ul(1)">NFT creation and distribution</li>
+                        <li onClick="ul(2)">Vesting/lockup contracts</li>
+                        <li onClick="ul(3)">Social media writing </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="full" data-aos="fade-up" data-aos-duration="1200">
+                <div class="underline"></div>
+                <div class="underline"></div>
+                <div class="underline"></div>
+                <a onClick="ul(0)" class="scheme-link">AI-powered content generation</a>
+                <a onClick="ul(1)" class="scheme-link">NFT creation and distribution</a>
+                <a onClick="ul(2)" class="scheme-link">Vesting/lockup contracts</a>
+                <a onClick="ul(3)" class="scheme-link">Social media writing </a>
+            </div>
+
+            <div class="schemes-container">
+                <div class="new-scheme">
+                    <img src="img/schema-without.svg" alt="Scheme" class="scheme-without">
+
+                    <p class="scheme-text absolute">Brainstorming</p>
+                    <p class="scheme-main-text absolute">Idea generation</p>
+                    <p class="scheme-little first-p absolute">Valuable</p>
+
+
+                    <p class="scheme-similar p-1 absolute">Content creation</p>
+                    <p class="scheme-similar p-2 absolute">Final touch</p>
+
+                    <p class="scheme-similar p-3 absolute">Optimization</p>
+                    <p class="scheme-similar p-4 absolute">Name of the box</p>
+                    <img src="img/add-variant.svg" alt="Add-variant" class="add-variant" id="add-variant-btn" onclick="openFeedback()">
+                </div>
+                <div class="responsive-scheme">
+                    <img src="img/responsive-scheme.svg" alt="scheme" class="responsive-img">
+                    <p class="scheme-text absolute">Brainstorming</p>
+                    <p class="scheme-main-text absolute">Idea generation</p>
+                    <p class="scheme-little first-p absolute">20 words, 2 sentences</p>
+                    <p class="scheme-similar p-1 absolute">Content creation</p>
+                    <p class="scheme-similar p-2 absolute">Final touch</p>
+                    <p class="scheme-similar p-3 absolute">Optimization</p>
+                    <p class="scheme-similar p-4 absolute">Final touch</p>
+                    <img src="img/add-variant.svg" class="add-variant" id="add-variant-btn" alt="Add-variant" onclick="openFeedback()">
+
+                </div>
+            </div>
+
+            <div class="schemes-container schemes-container-old">
+                <div class="new-scheme">
+                    <img src="img/schema-without.svg" alt="Scheme" class="scheme-without">
+
+                    <p class="scheme-text absolute">Brainstorming</p>
+                    <p class="scheme-main-text absolute">Idea generation</p>
+                    <p class="scheme-little first-p absolute">Valuable</p>
+
+
+                    <p class="scheme-similar p-1 absolute">Content creation</p>
+                    <p class="scheme-similar p-2 absolute">Final touch</p>
+
+                    <p class="scheme-similar p-3 absolute">Optimization</p>
+                    <p class="scheme-similar p-4 absolute">Name of the box</p>
+                    <img src="img/add-variant.svg" alt="Add-variant" id="add-variant-btn" onclick="openFeedback()">
+                </div>
+                <div class="responsive-scheme">
+                    <img src="img/responsive-scheme.svg" alt="scheme" class="responsive-img">
+                    <p class="scheme-text absolute">Brainstorming</p>
+                    <p class="scheme-main-text absolute">Idea generation</p>
+                    <p class="scheme-little first-p absolute">20 words, 2 sentences</p>
+                    <p class="scheme-similar p-1 absolute">Content creation</p>
+                    <p class="scheme-similar p-2 absolute">Final touch</p>
+                    <p class="scheme-similar p-3 absolute">Optimization</p>
+                    <p class="scheme-similar p-4 absolute">Final touch</p>
+                    <img src="img/add-variant.svg" id="add-variant-btn" alt="Add-variant" onclick="openFeedback()">
+
+                </div>
+            </div>
+
+            <div class="schemes-container schemes-container-old">
+                <div class="new-scheme">
+                    <img src="img/schema-without.svg" alt="Scheme" class="scheme-without">
+
+                    <p class="scheme-text absolute">Brainstorming</p>
+                    <p class="scheme-main-text absolute">Idea generation</p>
+                    <p class="scheme-little first-p absolute">Valuable</p>
+
+
+                    <p class="scheme-similar p-1 absolute">Content creation</p>
+                    <p class="scheme-similar p-2 absolute">Final touch</p>
+
+                    <p class="scheme-similar p-3 absolute">Optimization</p>
+                    <p class="scheme-similar p-4 absolute">Name of the box</p>
+                    <img src="img/add-variant.svg" alt="Add-variant" id="add-variant-btn" onclick="openFeedback()">
+                </div>
+                <div class="responsive-scheme">
+                    <img src="img/responsive-scheme.svg" alt="scheme" class="responsive-img">
+                    <p class="scheme-text absolute">Brainstorming</p>
+                    <p class="scheme-main-text absolute">Idea generation</p>
+                    <p class="scheme-little first-p absolute">20 words, 2 sentences</p>
+                    <p class="scheme-similar p-1 absolute">Content creation</p>
+                    <p class="scheme-similar p-2 absolute">Final touch</p>
+                    <p class="scheme-similar p-3 absolute">Optimization</p>
+                    <p class="scheme-similar p-4 absolute">Final touch</p>
+                    <img src="img/add-variant.svg" id="add-variant-btn" alt="Add-variant" onclick="openFeedback()">
+
+                </div>
+            </div>
+
+            <div class="schemes-container schemes-container-old">
+                <div class="new-scheme">
+                    <img src="img/schema-without.svg" alt="Scheme" class="scheme-without">
+
+                    <p class="scheme-text absolute">Brainstorming</p>
+                    <p class="scheme-main-text absolute">Idea generation</p>
+                    <p class="scheme-little first-p absolute">Valuable</p>
+
+
+                    <p class="scheme-similar p-1 absolute">Content creation</p>
+                    <p class="scheme-similar p-2 absolute">Final touch</p>
+
+                    <p class="scheme-similar p-3 absolute">Optimization</p>
+                    <p class="scheme-similar p-4 absolute">Name of the box</p>
+                    <img src="img/add-variant.svg" alt="Add-variant" id="add-variant-btn" onclick="openFeedback()">
+                </div>
+                <div class="responsive-scheme">
+                    <img src="img/responsive-scheme.svg" alt="scheme" class="responsive-img">
+                    <p class="scheme-text absolute">Brainstorming</p>
+                    <p class="scheme-main-text absolute">Idea generation</p>
+                    <p class="scheme-little first-p absolute">20 words, 2 sentences</p>
+                    <p class="scheme-similar p-1 absolute">Content creation</p>
+                    <p class="scheme-similar p-2 absolute">Final touch</p>
+
+                    <p class="scheme-similar p-3 absolute">Optimization</p>
+                    <p class="scheme-similar p-4 absolute">Final touch</p>
+                    <img src="img/add-variant.svg" id="add-variant-btn" alt="Add-variant" onclick="openFeedback()">
+
+                </div>
+            </div>
+
+            <div class="feedback-container" id="feedback-container" data-aos="fade-up" data-aos-duration="1200">
+                <div class="feedback-txt">
+                    <h4> Write a <br> feedback</h4>
+                    <p class="tt-grey-18">
+                        You can write a feedback or suggestions and let us know how you feel about private/public sales
+                        or
+                        in general about the project. Please log in to write a feedback.
+                    </p>
+                </div>
+                <form class="send-feedback" action="#" method="post">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Any suggestions?"></textarea>
+                    <input type="submit" value="Send Feedback" disabled id="send-feedback">
+                </form>
+            </div>
+        </div>
+
+        <div class="tokenomics" id="tokenomics">
+
+            <h4 data-aos="fade-up">Tokenomics</h4>
+
+            <div class="tokenomics-content">
+                <img src="img/center-man.png" alt="Ai Man" class="center-man">
+                <div class="tokenomics-div tok-s">
+                    <img src="img/spider-bg.svg" alt="Background" class="tok-bg">
+
+                    <div class="tok-left-t tok-box">
+                        <p>AI Development - 10%</p>
+                        <p>100,000,000 tokens</p>
+                        <svg width="135" height="135" viewBox="0 0 135 135" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M134.5 134.5L6 6" stroke="url(#paint0_linear_74_314)" stroke-opacity="0.3" />
+                            <circle cx="4" cy="4" r="4" fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_74_314" x1="6" y1="70.25" x2="134.5" y2="70.25"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="tok-right-t tok-box">
+                        <p>Private Sale - 15%</p>
+                        <p>150,000,000 tokens</p>
+
+                        <svg width="135" height="135" viewBox="0 0 135 135" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M134.5 134.5L6 6" stroke="url(#paint0_linear_74_314)" stroke-opacity="0.3" />
+                            <circle cx="4" cy="4" r="4" fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_74_314" x1="6" y1="70.25" x2="134.5" y2="70.25"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="tokenomics-div tok-l">
+                    <div class="tok-box tok-mid-left-t">
+                        <p>Legal & <br> Compliance - 5%</p>
+                        <p>50,000,000 tokens</p>
+                        <svg width="274" height="133" viewBox="0 0 274 133" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M273 132L144.5 4L7 4" stroke="url(#paint0_linear_80_315)" stroke-opacity="0.3" />
+                            <circle cx="4" cy="4" r="4" fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_80_315" x1="140" y1="4" x2="140" y2="132"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="tok-box tok-mid-right-t">
+                        <p>Public Sale - 25%</p>
+                        <p>250,000,000 tokens</p>
+                        <svg width="274" height="133" viewBox="0 0 274 133" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M273 132L144.5 4L7 4" stroke="url(#paint0_linear_80_315)" stroke-opacity="0.3" />
+                            <circle cx="4" cy="4" r="4" fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_80_315" x1="140" y1="4" x2="140" y2="132"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="tokenomics-div tok-l tok-mid-bottom">
+                    <div class="tok-box tok-mid-left-b">
+                        <p>Partnerships & <br> Collborations - 15%</p>
+                        <p>150,000,000 tokens</p>
+                        <svg width="274" height="133" viewBox="0 0 274 133" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M273 132L144.5 4L7 4" stroke="url(#paint0_linear_80_315)" stroke-opacity="0.3" />
+                            <circle cx="4" cy="4" r="4" fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_80_315" x1="140" y1="4" x2="140" y2="132"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="tok-box tok-mid-right-b">
+                        <p>Team and Advisors 20%</p>
+                        <p>200,000,000 tokens</p>
+                        <svg width="274" height="133" viewBox="0 0 274 133" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M273 132L144.5 4L7 4" stroke="url(#paint0_linear_80_315)" stroke-opacity="0.3" />
+                            <circle cx="4" cy="4" r="4" fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_80_315" x1="140" y1="4" x2="140" y2="132"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="tokenomics-div tok-s">
+                    <div class="tok-box tok-left-b">
+                        <p>Platform <br> Development - 15%</p>
+                        <p>150,000,000 tokens</p>
+                        <svg width="135" height="135" viewBox="0 0 135 135" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M134.5 134.5L6 6" stroke="url(#paint0_linear_74_314)" stroke-opacity="0.3" />
+                            <circle cx="4" cy="4" r="4" fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_74_314" x1="6" y1="70.25" x2="134.5" y2="70.25"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="tok-box tok-right-b">
+                        <p>Marketing & Community Building - 10%</p>
+                        <p>100,000,000 tokens</p>
+                        <svg width="135" height="135" viewBox="0 0 135 135" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M134.5 134.5L6 6" stroke="url(#paint0_linear_74_314)" stroke-opacity="0.3" />
+                            <circle cx="4" cy="4" r="4" fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_74_314" x1="6" y1="70.25" x2="134.5" y2="70.25"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="white" />
+                                    <stop offset="1" stop-color="white" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="tokenomics-mobile" data-aos="fade-up" data-aos-duration="1200">
+                <img src="img/left-line.svg" alt="Line">
+                <div class="tokenomics-mobile-content">
+                    <div>
+                        <p>Private Sale - 15%</p>
+                        <p>150,000,000 tokens</p>
+                    </div>
+
+                    <div>
+                        <p>AI Development - 10%</p>
+                        <p>100,000,000 tokens</p>
+                    </div>
+
+                    <div>
+                        <p>Public Sale - 25%</p>
+                        <p>250,000,000 tokens</p>
+                    </div>
+
+                    <div>
+                        <p>Legal & Compliance - 5%</p>
+                        <p>50,000,000 tokens</p>
+                    </div>
+
+                    <div>
+                        <p>Partnerships & <br> Collborations - 15%</p>
+                        <p>150,000,000 tokens</p>
+                    </div>
+
+                    <div>
+                        <p>Team and Advisors 20%</p>
+                        <p>200,000,000 tokens</p>
+                    </div>
+                    <div>
+                        <p>Marketing & Community <br> Building - 10%</p>
+                        <p>100,000,000 tokens</p>
+                    </div>
+                    <div>
+                        <p>Platform Development - 15%</p>
+                        <p>150,000,000 tokens</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- mishka start -->
+    <section class="about-us connected-hidden" id="about-us">
+        <div class="about-container">
+            <img src="img/about-us.png" class="about-img" alt="about-us" data-aos="fade-up" data-aos-duration="800">
+            <div class="about-info" data-aos="fade-up" data-aos-duration="1200">
+                <h2 class="about-h2">About us</h2>
+                <p class="about-p">At Xchain AI, we believe that technology should simplify and enhance our lives, not
+                    make it more complicated. That's why we created a platform that leverages the power of AI to
+                    generate content, create and distribute NFTs and smart contracts, and simplify the process of
+                    writing social media articles. <br> <br>
+
+                    Our team is made up of experts in the fields of AI, blockchain, and content creation, and we are
+                    committed to delivering a user-friendly, cutting-edge platform that benefits everyone.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section-team connected-hidden" id="section-team">
+        <h2 class="our-h2" data-aos="fade-up">Our Team</h2>
+
+
+        <div class="team-container">
+            <div class="team-box" data-aos="fade-up" data-aos-duration="800">
+                <img src="img/light-L.svg" alt="light" class="light-l lights">
+                <img src="img/person-1.png" alt="pesron-1" class="team-left team">
+                <div class="team-info" data-aos="fade-up">
+                    <h4 class="team-h4">Xchain Z</h4>
+                    <p class="team-p">The AI-powered idea generator behind the project. IntelliChainz works on platform development and content generation.
+                    </p>
+                </div>
+            </div>
+            <div class="team-box" data-aos="fade-up" data-aos-duration="800">
+                <img src="img//light-R.svg" alt="light" class="light-r lights">
+                <img src="img/person 2.png" alt="pesron-2" class="team-right team">
+                <div class="team-info" data-aos="fade-up">
+                    <h4 class="team-h4">Pixel Pixie</h4>
+                    <p class="team-p">A copywriter responsible for creating engaging content for the project, ranging from website copy to whitepapers.
+                    </p>
+                </div>
+            </div>
+            <div class="team-box" data-aos="fade-up" data-aos-duration="800">
+                <img src="img/light-L.svg" alt="light" class="light-l lights">
+                <img src="img/person 3.png" alt="pesron-3" class="team-left team">
+                <div class="team-info" data-aos="fade-up">
+
+                    <h4 class="team-h4">NFT Ninja</h4>
+                    <p class="team-p">A talented NFT designer and creator who works on designing and creating NFTs for the platform.
+                    </p>
+                </div>
+            </div>
+            <div class="team-box" data-aos="fade-up" data-aos-duration="800">
+                <img src="img//light-R.svg" alt="light" class="light-r lights">
+                <img src="img/person 4.png" alt="pesron-4" class="team-right team">
+                <div class="team-info" data-aos="fade-up">
+                    <h4 class="team-h4">Solidity Savant</h4>
+                    <p class="team-p"> A blockchain developer and Solidity expert who specializes in smart contract creation and vesting/lockup smart contract development
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- mishka end-->
+
+
+    <!----------------- partners section --------------------->
+    <section class="parnters connected-hidden" data-aos="fade-up" data-aos-duration="800">
+        <h2>Partners</h2>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="img/openai2.svg" alt="Abper">
+                </div>
+                <div class="slide">
+                    <img src="img/firebase2.svg" alt="Evianbo">
+                </div>
+                <div class="slide">
+                    <img src="img/tensorflow2.svg" alt="Agillian">
+                </div>
+                 <div class="slide">
+                    <img src="img/stability.svg" alt="Agillian">
+                </div>
+                 <div class="slide">
+                    <img src="img/binance2.svg" alt="Agillian">
+                </div>
+                <div class="slide">
+                    <img src="img/openai2.svg" alt="Abper">
+                </div>
+                <div class="slide">
+                    <img src="img/firebase2.svg" alt="Evianbo">
+                </div>
+                <div class="slide">
+                    <img src="img/tensorflow2.svg" alt="Agillian">
+                </div>
+                <div class="slide">
+                    <img src="img/stability.svg" alt="Agillian">
+                </div>
+                <div class="slide">
+                    <img src="img/binance2.svg" alt="Agillian">
+                </div>
+
+                 <div class="slide">
+                    <img src="img/openai2.svg" alt="Abper">
+                </div>
+                <div class="slide">
+                    <img src="img/firebase2.svg" alt="Evianbo">
+                </div>
+                <div class="slide">
+                    <img src="img/tensorflow2.svg" alt="Agillian">
+                </div>
+                 <div class="slide">
+                    <img src="img/stability.svg" alt="Agillian">
+                </div>
+                 <div class="slide">
+                    <img src="img/binance2.svg" alt="Agillian">
+                </div>
+                 <div class="slide">
+                    <img src="img/openai2.svg" alt="Abper">
+                </div>
+                <div class="slide">
+                    <img src="img/firebase2.svg" alt="Evianbo">
+                </div>
+                <div class="slide">
+                    <img src="img/tensorflow2.svg" alt="Agillian">
+                </div>
+                 <div class="slide">
+                    <img src="img/stability.svg" alt="Agillian">
+                </div>
+                 <div class="slide">
+                    <img src="img/binance2.svg" alt="Agillian">
+                </div>
+                 <div class="slide">
+                    <img src="img/openai2.svg" alt="Abper">
+                </div>
+                <div class="slide">
+                    <img src="img/firebase2.svg" alt="Evianbo">
+                </div>
+                <div class="slide">
+                    <img src="img/tensorflow2.svg" alt="Agillian">
+                </div>
+                 <div class="slide">
+                    <img src="img/stability.svg" alt="Agillian">
+                </div>
+ <div class="slide">
+                    <img src="img/binance2.svg" alt="Agillian">
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------- faq ---------------------------------->
+    <section class="faq-section connected-hidden">
+
+        <h2 data-aos="fade-up" data-aos="fade-up">F.A.Q.</h2>
+        <div class="faq-container">
+            <div class="accordion cursor-scale small" data-aos="flip-up" data-aos-duration="800">
+                <div class="dropdown">
+                    <p class="white-24-d">How we stand out from others?</p>
+                    <img src="img/plus.svg" class="drop-btn" alt="Plus">
+                </div>
+                <div class="panel">
+
+                    <p class="p-grey-18">
+                        
+                      Xchain AI stands out from its competitors in several ways. Firstly, our platform utilizes the latest advancements in AI technology to simplify the process of creating and distributing digital content and assets. This makes it easier for artists, writers, and developers to bring their digital creations to life and reach a wider audience.<br><br>
+
+                      Another way Xchain AI stands out is with its focus on smart contract development and blockchain technology. Our platform includes a powerful Solidity Writer tool that enables users to easily write and deploy smart contracts, streamlining the process of building and using decentralized applications.<br><br>
+                      
+                      Additionally, our team consists of experts in AI, blockchain, and digital content creation, ensuring that our platform is built to meet the needs and expectations of our users. With our dedication to innovation and excellence, Xchain AI is positioned to lead the way in the rapidly growing field of AI and blockchain technology. <br><br>                     
+                    </p>
+                </div>
+            </div>
+            <div class="accordion cursor-scale small" data-aos="flip-up" data-aos-duration="800">
+                <div class="dropdown">
+                    <p class="white-24-d">What are the main features of Xchain AI?</p>
+                    <img src="img/plus.svg" class="drop-btn" alt="Plus">
+                </div>
+                <div class="panel">
+
+                    <p class="p-grey-18">
+                        
+                       Xchain AI offers a variety of features, including AI-powered content generation, NFT creation and distribution, Solidity smart contract writing and code generation, social media writing, and custom vesting and lockup contracts.
+                    
+                    </p>
+                </div>
+            </div>
+            <div class="accordion cursor-scale small" data-aos="flip-up" data-aos-duration="800">
+                <div class="dropdown">
+                    <p class="white-24-d">How does Xchain AI use AI in content creation?</p>
+                    <img src="img/plus.svg" class="drop-btn" alt="Plus">
+                </div>
+                <div class="panel">
+                    <p class="p-grey-18">
+                        
+                        Xchain AI utilizes artificial intelligence algorithms to help users generate high-quality content, including writing books, social media posts, and more. The AI content generation tool requires just a few simple prompts from the user to generate content.
+                
+                    </p>
+                </div>
+            </div>
+            <div class="accordion cursor-scale small" data-aos="flip-up" data-aos-duration="800">
+                <div class="dropdown">
+                    <p class="white-24-d">Can I use Xchain AI for NFT creation and distribution?</p>
+                    <img src="img/plus.svg" class="drop-btn" alt="Plus">
+                </div>
+                <div class="panel">
+                    <p class="p-grey-18">
+                    
+                        Yes, Xchain AI provides an AI-powered tool for creating and distributing NFTs on the platform. This makes the process of NFT creation and distribution easier and more accessible for everyone.
+                
+                    </p>
+                </div>
+            </div>
+            <div class="accordion cursor-scale small" data-aos="flip-up" data-aos-duration="800">
+                <div class="dropdown">
+                    <p class="white-24-d">Can Xchain AI help me write smart contracts?</p>
+                    <img src="img/plus.svg" class="drop-btn" alt="Plus">
+                </div>
+                <div class="panel">
+                    <p class="p-grey-18">
+                    
+                        Yes, Xchain AI offers a Solidity Writer tool that allows users to write smart contracts in Solidity code with just a few prompts, or to let the AI generate the code for them. This helps streamline the process of smart contract development.
+                
+                    </p>
+                </div>
+            </div>
+            <div class="accordion cursor-scale small" data-aos="flip-up" data-aos-duration="800">
+                <div class="dropdown">
+                    <p class="white-24-d">Is Xchain AI only for blockchain developers and experts?</p>
+                    <img src="img/plus.svg" class="drop-btn" alt="Plus">
+                </div>
+                <div class="panel">
+                    <p class="p-grey-18">
+                    
+                        No, Xchain AI is designed for anyone who wants to bring their digital creations to life, including artists, writers, and developers. The platform is user-friendly and accessible, making it easy for anyone to generate high-quality content and assets.
+                
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--------------------------- pop up ---------------------------------->
+    <div id="popup-container">
+        <div class="popup">
+            <div class="popup-header">
+                <p>Connect Wallet</p>
+                <button class="popup-close-btn" onclick="closePop()">
+                    Close
+                    <img src="img/close.svg" alt="Close">
+                </button>
+            </div>
+
+            <div class="popup-middle">
+                <img src="img/popup-img.png" alt="AI">
+                <h6>Welcome to Xchain AI</h6>
+                <p>Please select a desired chain below</p>
+            </div>
+
+            <div class="popup-btns">
+                <a href="#" id="metamask-btn">
+                    <button id="connect-btn">
+                        <img src="img/bnb-wallet.svg" alt="Bnb">
+                        Connect BSC Wallet
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--------------------------- footer ---------------------------------->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-top">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Logo" class="logo">
+                </a>
+                <div class="footer-social">
+                    <a href="#"> <img src="img/discord.svg" alt="Discord"> </a>
+                    <a href="#"> <img src="img/twitter.svg" alt="Twitter"> </a>
+                    <a href="#"> <img src="img/instagram.svg" alt="Instagram"> </a>
+                    <a href="#"> <img src="img/facebook.svg" alt="Facebook"> </a>
+                    <a href="#"> <img src="img/telegram.svg" alt="Telegram"> </a>
+                </div>
+            </div>
+            <hr>
+
+            <div class="footer-footer">
+                <nav>
+                    <a href="#header">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#tokenomics">Tokenomics</a>
+                    <a href="#section-team">Our Team</a>
+                    <a href="#about-us">About us </a>
+                </nav>
+                <p>Copyright © Xchain AI, 2023</p>
+            </div>
+        </div>
+    </footer>
+ 
+
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.querySelector('.dropdown').classList.toggle("active-faq");
+                var panel = this.querySelector('.dropdown').nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+
+                    // this.style.backgroundColor = "#ffffff"; // Returns the <html> element
+                    this.style.paddingBottom = "0";
+
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                    // this.style.backgroundColor = "#F8F9FA"; // Returns the <html> element
+                    this.style.paddingBottom = "32px";
+
+
+                }
+            });
+        }
+    </script>
+
+    <script>
+        function ul(index) {
+
+            console.log('click!' + index)
+
+            var underlines = document.querySelectorAll(".underline");
+            var photos = document.querySelectorAll('.schemes-container');
+            var links = document.querySelectorAll('.scheme-link');
+
+            for (var i = 0; i < underlines.length; i++) {
+                underlines[i].style.transform = 'translate3d(' + index * 100 + '%, 0, 0)';
+
+            }
+
+            for (let j = 0; j < photos.length; j++) {
+                photos[j].style.display = 'none';
+            }
+
+            for (let k = 0; k < links.length; k++) {
+                links[k].style.color = '#5B627A';
+            }
+            links[index].style.color = '#FFFFFF';
+            photos[index].style.display = 'block';
+        }
+    </script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <script>
+        const initpXDropdown = () => {
+            const dropdownElements = document.querySelectorAll(".px-dropdown");
+            window.addEventListener("click", () => {
+                dropdownElements.forEach((item) => {
+                    item.classList.remove("active");
+                });
+            });
+            dropdownElements.forEach((item) => {
+                const dropdownValue = item.querySelector(".px-dropdown-value");
+                const dropdownInput = item.querySelector(".px-dropdown-input");
+                const dropdownPanelOptions = item.querySelectorAll(
+                    ".px-dropdown-panel ul li"
+                );
+                dropdownInput.addEventListener("click", (event) => {
+                    event.stopPropagation();
+                    item.classList.toggle("active");
+                });
+                dropdownPanelOptions.forEach((dropdownPanelOptionItem) => {
+                    dropdownPanelOptionItem.addEventListener("click", () => {
+                        dropdownInput.querySelector("input").value =
+                            dropdownPanelOptionItem.innerHTML;
+                        dropdownValue.value = dropdownPanelOptionItem.getAttribute(
+                            "data-value"
+                        );
+                    });
+                });
+            });
+        };
+        initpXDropdown();
+    </script>
+
+    <script>
+        let popup = document.getElementById('popup-container');
+
+        function closePop() {
+            popup.style.opacity = '0';
+            popup.style.zIndex = '-1';
+            document.body.classList.remove("stop-scrolling");
+        }
+        function openPop() {
+            popup.style.opacity = '1';
+            popup.style.zIndex = '9999';
+            document.body.classList.add("stop-scrolling");
+        }
+    </script>
+
+
+    <script>
+        document.getElementById('connect-btn').addEventListener('click', event => {
+            let account;
+            let variantBtn = document.getElementById('add-variant-btn');
+            let popup = document.getElementById('popup-container');
+            let button = event.target;
+            
+            let feedbackBtn = document.getElementById('send-feedback');
+            let variantBtns = document.querySelectorAll('.add-variant');
+            let connBtn = document.getElementById('header-btn');
+            ethereum.request({ method: 'eth_requestAccounts' }).then(accounts => {
+                popup.style.opacity = '0';
+                popup.style.zIndex = '-1';
+                document.body.classList.remove("stop-scrolling");
+
+                account = accounts[0];
+                button.textContent = account;
+                document.cookie = account;
+                variantBtns[0].style.display = "block";
+                variantBtns[1].style.display = "block";
+                feedbackBtn.disabled = false;
+                variantBtn.style.display = "block";
+                connBtn.textContent = 'Go To Platform';
+                connBtn.href = 'coming.html';
+                ethereum.request({ method: 'eth_getBalance', params: [account, 'latest'] }).then(result => {
+
+                    let wei = parseInt(result, 16);
+                    let balance = wei / (10 ** 18);
+
+                });
+            });
+        });
+
+    </script>
+    <script>
+        let feedbackBtn = document.getElementById('send-feedback');
+        let connBtn = document.getElementById('header-btn');
+        // let variantBtn = document.getElementById('add-variant-btn');
+        let variantBtns = document.querySelectorAll('.add-variant');
+        let ca = document.cookie.split(';');
+        if (ca[2].indexOf('0') > -1) {
+            feedbackBtn.disabled = false;
+            connBtn.textContent = 'Go To Platform';
+            connBtn.href = 'coming.html';
+            variantBtns[0].style.display = "block";
+            variantBtns[1].style.display = "block";
+
+        }
+    </script>
+
+    <script>
+        var metaBtn = document.getElementById('metamask-btn');
+        window.addEventListener('load', function () {
+            if (window.ethereum) {
+                if (window.ethereum.isMetaMask) {
+                    // console.log('MetaMask is active')
+                } else {
+                    // console.log('MetaMask is not available')
+                    metaBtn.href = 'https://metamask.io/download/';
+                }
+            } else {
+                // console.log('Ethereum support is not found')
+                metaBtn.href = 'https://metamask.io/download/';
+            }
+        })
+    </script>
+
+
+    <script>
+        let overlay = document.getElementById("overlay");
+
+        setTimeout(function () {
+            overlay.style.opacity = "0";
+            overlay.style.zIndex = "-1";
+
+        }, 1700);
+
+    </script>
+
+
+    <script>
+        let feedbackContainer = document.getElementById('feedback-container');
+        function openFeedback() {
+            feedbackContainer.style.opacity = '1';
+            feedbackContainer.style.position = 'static';
+            feedbackContainer.style.marginTop = '160px';
+            feedbackContainer.style.zIndex = '1';
+            feedbackContainer.style.transform = 'translate(0%, 0%)';
+        }
+    </script>
+
+
+</body>
+
+</html>
